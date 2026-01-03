@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database"; // <-- J'ai ajouté cette ligne
+import { getDatabase } from "firebase/database"; // <-- Antenne ajoutée
 
 const firebaseConfig = {
   apiKey: "AIzaSyAcco20FEbMPGad7p5xHvmPom0ws39QD8Q",
@@ -14,5 +14,5 @@ const firebaseConfig = {
 // Initialise Firebase
 const app = initializeApp(firebaseConfig);
 
-// Exporte la base de données pour l'utiliser dans tes pages
-export const db = getDatabase(app); // <-- J'ai ajouté cette ligne importante
+// Exporte la base de données pour que tes pages puissent l'utiliser
+export const db = getDatabase(app); // <-- Ligne cruciale ajoutée
